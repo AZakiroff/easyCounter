@@ -50,6 +50,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        historyTextView.isEditable = false
+        
         countLabelDescription = setLabel(label: countLabelDescription, fontSize: labelFontSizeCaption, initialText: countLabelDescriptionText)
         
         historyLabelDescription = setLabel(label: historyLabelDescription, fontSize: labelFontSizeCaption, initialText: historyLabelDescriptionText)
