@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     let countLabelDescriptionText: String = "Значение счётчика"
     let historyLabelDescriptionText: String = "История изменений"
     
+    let screen = UIScreen.main.bounds
+    
     @IBOutlet weak var buttonMinus: UIButton!
     @IBOutlet weak var buttonPlus: UIButton!
     @IBOutlet weak var buttonRefresh: UIButton!
@@ -63,6 +65,12 @@ class ViewController: UIViewController {
         buttonPlus = setRoundButton(button: buttonPlus, backgroundColor: buttonsСhangeBackgroundColor, size: buttonsСhangeSize, borderWidth: buttonsСhangeBorderWidth, color: buttonChangePlusColor, imageSystemName: buttonChangePlusImageSystemName)
         
         buttonRefresh = setRoundButton(button: buttonRefresh, backgroundColor: buttonsСhangeBackgroundColor, size: buttonsRefreshSize, borderWidth: buttonsRefreshBorderWidth, color: buttonNonActiveColor, imageSystemName: buttonChangeRefreshImageSystemName)
+        
+        buttonRefresh.frame.origin.x = screen.width / 2 - buttonsRefreshSize / 2
+        
+        buttonMinus.frame.origin.x = screen.width / 2 - buttonsСhangeSize * 2
+        
+        buttonPlus.frame.origin.x = screen.width / 2 + buttonsСhangeSize
         
     }
     
@@ -111,17 +119,21 @@ class ViewController: UIViewController {
         if let imageSystemName = imageSystemName {
             button.setImage(UIImage(systemName: imageSystemName), for: .normal)
         }
+        
         if let backgroundColor = backgroundColor {
             button.backgroundColor = backgroundColor
         }
+        
         if let size = size {
             button.frame.size.width = size
             button.frame.size.height = size
             button.layer.cornerRadius = size / 2
         }
+        
         if let borderWidth = borderWidth {
             button.layer.borderWidth = borderWidth
         }
+        
         button.setTitle("", for: .normal)
         button.tintColor = color
         button.layer.borderColor = (color).cgColor
@@ -131,15 +143,15 @@ class ViewController: UIViewController {
     
     private func setLabel(label: UILabel,
                           fontSize: CGFloat,
-                          initialText: String) -> UILabel{
+                          initialText: String) -> UILabel {
         label.font = UIFont.systemFont(ofSize: fontSize)
-        //label.frame.size.width = fontSize //не знаю как правильно задать ширину))
+        label.frame.size.width = screen.width - 20
+        label.frame.origin.x = 10
         label.frame.size.height = fontSize
         label.text = initialText
         
         return label
     }
-
 
 }
 
