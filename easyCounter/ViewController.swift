@@ -9,34 +9,34 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let buttonsСhangeBackgroundColor: UIColor = .white
-    let buttonsСhangeSize: CGFloat = 80
-    let buttonsRefreshSize: CGFloat = 40
-    let buttonsСhangeBorderWidth: Double = 5.0
-    let buttonsRefreshBorderWidth: Double = 3.0
-    let buttonChangeMinusColor: UIColor = .red
-    let buttonChangePlusColor: UIColor = .blue
-    let buttonChangeRefreshColor: UIColor = .orange
-    let buttonNonActiveColor: UIColor = .gray
-    let buttonChangeMinusImageSystemName: String = "minus"
-    let buttonChangePlusImageSystemName: String = "plus"
-    let buttonChangeRefreshImageSystemName: String = "arrow.clockwise"
-    let labelFontSizeCaption: CGFloat = 16
-    let labelFontSizeCountValue: CGFloat = 52
-    let countLabelDescriptionText: String = "Значение счётчика"
-    let historyLabelDescriptionText: String = "История изменений"
+    private let buttonsСhangeBackgroundColor: UIColor = .white
+    private let buttonsСhangeSize: CGFloat = 80
+    private let buttonsRefreshSize: CGFloat = 40
+    private let buttonsСhangeBorderWidth: Double = 5.0
+    private let buttonsRefreshBorderWidth: Double = 3.0
+    private let buttonChangeMinusColor: UIColor = .red
+    private let buttonChangePlusColor: UIColor = .blue
+    private let buttonChangeRefreshColor: UIColor = .orange
+    private let buttonNonActiveColor: UIColor = .gray
+    private let buttonChangeMinusImageSystemName: String = "minus"
+    private let buttonChangePlusImageSystemName: String = "plus"
+    private let buttonChangeRefreshImageSystemName: String = "arrow.clockwise"
+    private let labelFontSizeCaption: CGFloat = 16
+    private let labelFontSizeCountValue: CGFloat = 52
+    private let countLabelDescriptionText: String = "Значение счётчика"
+    private let historyLabelDescriptionText: String = "История изменений"
     
-    let screen = UIScreen.main.bounds
+    private let screen = UIScreen.main.bounds
     
-    @IBOutlet weak var buttonMinus: UIButton!
-    @IBOutlet weak var buttonPlus: UIButton!
-    @IBOutlet weak var buttonRefresh: UIButton!
-    @IBOutlet weak var countLabelDescription: UILabel!
-    @IBOutlet weak var countLabel: UILabel!
-    @IBOutlet weak var historyLabelDescription: UILabel!
-    @IBOutlet weak var historyTextView: UITextView!
+    @IBOutlet weak private var buttonMinus: UIButton!
+    @IBOutlet weak private var buttonPlus: UIButton!
+    @IBOutlet weak private var buttonRefresh: UIButton!
+    @IBOutlet weak private var countLabelDescription: UILabel!
+    @IBOutlet weak private var countLabel: UILabel!
+    @IBOutlet weak private var historyLabelDescription: UILabel!
+    @IBOutlet weak private var historyTextView: UITextView!
     
-    var countValue: Int = 0 {
+    private var countValue: Int = 0 {
         didSet{
             countLabel.text = "\(countValue)"
             if countValue == 0 {
@@ -72,27 +72,6 @@ class ViewController: UIViewController {
         
         buttonPlus.frame.origin.x = screen.width / 2 + buttonsСhangeSize
         
-    }
-    
-    @IBAction func actionPushPlus(_ sender: Any) {
-        countValue += 1
-        addHistory(value: +1)
-    }
-    
-    @IBAction func actionPushMinus(_ sender: Any) {
-        if countValue > 0 {
-            countValue -= 1
-            addHistory(value: -1)
-        } else {
-            countValue = 0
-        }
-    }
-    
-    @IBAction func actionRefresh(_ sender: Any) {
-        if countValue > 0 {
-            countValue = 0
-            addHistory(value: 0)
-        }
     }
     
     private func addHistory(value: Int) {
@@ -151,6 +130,27 @@ class ViewController: UIViewController {
         label.text = initialText
         
         return label
+    }
+    
+    @IBAction private func actionPushPlus(_ sender: Any) {
+        countValue += 1
+        addHistory(value: +1)
+    }
+    
+    @IBAction private func actionPushMinus(_ sender: Any) {
+        if countValue > 0 {
+            countValue -= 1
+            addHistory(value: -1)
+        } else {
+            countValue = 0
+        }
+    }
+    
+    @IBAction private func actionRefresh(_ sender: Any) {
+        if countValue > 0 {
+            countValue = 0
+            addHistory(value: 0)
+        }
     }
 
 }
