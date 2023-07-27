@@ -13,6 +13,8 @@
 		C0EF67BB2A703C9E002529AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EF67B92A703C9E002529AB /* Main.storyboard */; };
 		C0EF67BD2A703C9F002529AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0EF67BC2A703C9F002529AB /* Assets.xcassets */; };
 		C0EF67C02A703C9F002529AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EF67BE2A703C9F002529AB /* LaunchScreen.storyboard */; };
+		C0EF67C82A72CBBC002529AB /* UIButton+setRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF67C72A72CBBC002529AB /* UIButton+setRoundButton.swift */; };
+		C0EF67CA2A72CBFA002529AB /* UILabel+setLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF67C92A72CBFA002529AB /* UILabel+setLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C0EF67BC2A703C9F002529AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0EF67BF2A703C9F002529AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0EF67C12A703C9F002529AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0EF67C72A72CBBC002529AB /* UIButton+setRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+setRoundButton.swift"; sourceTree = "<group>"; };
+		C0EF67C92A72CBFA002529AB /* UILabel+setLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+setLabel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				C0EF67BC2A703C9F002529AB /* Assets.xcassets */,
 				C0EF67BE2A703C9F002529AB /* LaunchScreen.storyboard */,
 				C0EF67C12A703C9F002529AB /* Info.plist */,
+				C0EF67C72A72CBBC002529AB /* UIButton+setRoundButton.swift */,
+				C0EF67C92A72CBFA002529AB /* UILabel+setLabel.swift */,
 			);
 			path = easyCounter;
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0EF67B82A703C9E002529AB /* ViewController.swift in Sources */,
+				C0EF67C82A72CBBC002529AB /* UIButton+setRoundButton.swift in Sources */,
 				C0EF67B42A703C9E002529AB /* AppDelegate.swift in Sources */,
 				C0EF67B62A703C9E002529AB /* SceneDelegate.swift in Sources */,
+				C0EF67CA2A72CBFA002529AB /* UILabel+setLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

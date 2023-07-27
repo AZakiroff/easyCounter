@@ -40,11 +40,11 @@ class ViewController: UIViewController {
         didSet{
             countLabel.text = "\(countValue)"
             if countValue == 0 {
-                buttonMinus = setRoundButton(button: buttonMinus, color: buttonNonActiveColor)
-                buttonRefresh = setRoundButton(button: buttonRefresh, color: buttonNonActiveColor)
+                buttonMinus.setRoundButton(color: buttonNonActiveColor)
+                buttonRefresh.setRoundButton(color: buttonNonActiveColor)
             } else {
-                buttonMinus = setRoundButton(button: buttonMinus, color: buttonChangeMinusColor)
-                buttonRefresh = setRoundButton(button: buttonRefresh, color: buttonChangeRefreshColor)
+                buttonMinus.setRoundButton(color: buttonChangeMinusColor)
+                buttonRefresh.setRoundButton(color: buttonChangeRefreshColor)
             }
         }
     }
@@ -54,17 +54,17 @@ class ViewController: UIViewController {
         
         historyTextView.isEditable = false
         
-        countLabelDescription = setLabel(label: countLabelDescription, fontSize: labelFontSizeCaption, initialText: countLabelDescriptionText)
+        countLabelDescription.setLabel(fontSize: labelFontSizeCaption, initialText: countLabelDescriptionText, screenWidth: screen.width)
         
-        historyLabelDescription = setLabel(label: historyLabelDescription, fontSize: labelFontSizeCaption, initialText: historyLabelDescriptionText)
+        historyLabelDescription.setLabel(fontSize: labelFontSizeCaption, initialText: historyLabelDescriptionText, screenWidth: screen.width)
         
-        countLabel = setLabel(label: countLabel, fontSize: labelFontSizeCountValue, initialText: "\(countValue)")
+        countLabel.setLabel(fontSize: labelFontSizeCountValue, initialText: "\(countValue)", screenWidth: screen.width)
         
-        buttonMinus = setRoundButton(button: buttonMinus, backgroundColor: buttonsСhangeBackgroundColor, size: buttonsСhangeSize, borderWidth: buttonsСhangeBorderWidth, color: buttonNonActiveColor, imageSystemName: buttonChangeMinusImageSystemName)
+        buttonMinus.setRoundButton(backgroundColor: buttonsСhangeBackgroundColor, size: buttonsСhangeSize, borderWidth: buttonsСhangeBorderWidth, color: buttonNonActiveColor, imageSystemName: buttonChangeMinusImageSystemName)
         
-        buttonPlus = setRoundButton(button: buttonPlus, backgroundColor: buttonsСhangeBackgroundColor, size: buttonsСhangeSize, borderWidth: buttonsСhangeBorderWidth, color: buttonChangePlusColor, imageSystemName: buttonChangePlusImageSystemName)
+        buttonPlus.setRoundButton(backgroundColor: buttonsСhangeBackgroundColor, size: buttonsСhangeSize, borderWidth: buttonsСhangeBorderWidth, color: buttonChangePlusColor, imageSystemName: buttonChangePlusImageSystemName)
         
-        buttonRefresh = setRoundButton(button: buttonRefresh, backgroundColor: buttonsСhangeBackgroundColor, size: buttonsRefreshSize, borderWidth: buttonsRefreshBorderWidth, color: buttonNonActiveColor, imageSystemName: buttonChangeRefreshImageSystemName)
+        buttonRefresh.setRoundButton(backgroundColor: buttonsСhangeBackgroundColor, size: buttonsRefreshSize, borderWidth: buttonsRefreshBorderWidth, color: buttonNonActiveColor, imageSystemName: buttonChangeRefreshImageSystemName)
         
         buttonRefresh.frame.origin.x = screen.width / 2 - buttonsRefreshSize / 2
         
@@ -89,49 +89,6 @@ class ViewController: UIViewController {
         }
     }
     
-    private func setRoundButton(button: UIButton,
-                                backgroundColor: UIColor? = nil,
-                                size: CGFloat? = nil,
-                                borderWidth: Double? = nil,
-                                color: UIColor,
-                                imageSystemName: String? = nil) -> UIButton {
-        if let imageSystemName = imageSystemName {
-            button.setImage(UIImage(systemName: imageSystemName), for: .normal)
-        }
-        
-        if let backgroundColor = backgroundColor {
-            button.backgroundColor = backgroundColor
-        }
-        
-        if let size = size {
-            button.frame.size.width = size
-            button.frame.size.height = size
-            button.layer.cornerRadius = size / 2
-        }
-        
-        if let borderWidth = borderWidth {
-            button.layer.borderWidth = borderWidth
-        }
-        
-        button.setTitle("", for: .normal)
-        button.tintColor = color
-        button.layer.borderColor = (color).cgColor
-        
-        return button
-    }
-    
-    private func setLabel(label: UILabel,
-                          fontSize: CGFloat,
-                          initialText: String) -> UILabel {
-        label.font = UIFont.systemFont(ofSize: fontSize)
-        label.frame.size.width = screen.width - 20
-        label.frame.origin.x = 10
-        label.frame.size.height = fontSize
-        label.text = initialText
-        
-        return label
-    }
-    
     @IBAction private func actionPushPlus(_ sender: Any) {
         countValue += 1
         addHistory(value: +1)
@@ -154,4 +111,3 @@ class ViewController: UIViewController {
     }
 
 }
-
