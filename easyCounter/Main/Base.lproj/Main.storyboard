@@ -78,13 +78,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="buttonMinus" destination="rKx-N4-tpH" id="itj-Hk-rGc"/>
-                        <outlet property="buttonPlus" destination="BM1-JS-ViG" id="zzp-1h-EHQ"/>
-                        <outlet property="buttonRefresh" destination="6K6-ub-UCf" id="Ttb-6l-4Et"/>
-                        <outlet property="countLabel" destination="Mey-Va-YvV" id="CkW-8z-WAW"/>
-                        <outlet property="countLabelDescription" destination="0i9-ga-KH2" id="Vpn-ys-hij"/>
-                        <outlet property="historyLabelDescription" destination="fUi-5O-J33" id="hu0-LO-kSX"/>
-                        <outlet property="historyTextView" destination="ttT-vW-Qpt" id="6xJ-zJ-OaQ"/>
+                        <outlet property="minusUIButton" destination="rKx-N4-tpH" id="itj-Hk-rGc"/>
+                        <outlet property="plusUIButton" destination="BM1-JS-ViG" id="zzp-1h-EHQ"/>
+                        <outlet property="refreshUIButton" destination="6K6-ub-UCf" id="Ttb-6l-4Et"/>
+                        <outlet property="countDescriptionUILabel" destination="Mey-Va-YvV" id="CkW-8z-WAW"/>
+                        <outlet property="countUILabel" destination="0i9-ga-KH2" id="Vpn-ys-hij"/>
+                        <outlet property="historyDescriptionUILabel" destination="fUi-5O-J33" id="hu0-LO-kSX"/>
+                        <outlet property="historyTextUITextView" destination="ttT-vW-Qpt" id="6xJ-zJ-OaQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

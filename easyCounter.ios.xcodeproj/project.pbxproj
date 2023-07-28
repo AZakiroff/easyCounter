@@ -60,17 +60,49 @@
 		C0EF67B22A703C9E002529AB /* easyCounter */ = {
 			isa = PBXGroup;
 			children = (
-				C0EF67B32A703C9E002529AB /* AppDelegate.swift */,
-				C0EF67B52A703C9E002529AB /* SceneDelegate.swift */,
-				C0EF67B72A703C9E002529AB /* ViewController.swift */,
-				C0EF67B92A703C9E002529AB /* Main.storyboard */,
-				C0EF67BC2A703C9F002529AB /* Assets.xcassets */,
-				C0EF67BE2A703C9F002529AB /* LaunchScreen.storyboard */,
-				C0EF67C12A703C9F002529AB /* Info.plist */,
-				C0EF67C72A72CBBC002529AB /* UIButton+setRoundButton.swift */,
-				C0EF67C92A72CBFA002529AB /* UILabel+setLabel.swift */,
+				C0EF67CE2A72D23C002529AB /* Main */,
+				C0EF67CD2A72D203002529AB /* Application */,
+				C0EF67CC2A72D194002529AB /* Resources */,
+				C0EF67CB2A72CFB4002529AB /* Helpers */,
 			);
 			path = easyCounter;
+			sourceTree = "<group>";
+		};
+		C0EF67CB2A72CFB4002529AB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C0EF67C92A72CBFA002529AB /* UILabel+setLabel.swift */,
+				C0EF67C72A72CBBC002529AB /* UIButton+setRoundButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C0EF67CC2A72D194002529AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0EF67BE2A703C9F002529AB /* LaunchScreen.storyboard */,
+				C0EF67C12A703C9F002529AB /* Info.plist */,
+				C0EF67BC2A703C9F002529AB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C0EF67CD2A72D203002529AB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C0EF67B52A703C9E002529AB /* SceneDelegate.swift */,
+				C0EF67B32A703C9E002529AB /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C0EF67CE2A72D23C002529AB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C0EF67B92A703C9E002529AB /* Main.storyboard */,
+				C0EF67B72A703C9E002529AB /* ViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V25Z4L75L4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = easyCounter/Info.plist;
+				INFOPLIST_FILE = easyCounter/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -325,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V25Z4L75L4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = easyCounter/Info.plist;
+				INFOPLIST_FILE = easyCounter/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
