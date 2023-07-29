@@ -55,31 +55,21 @@ class ViewController: UIViewController {
         historyTextUITextView.isEditable = false
         
         countDescriptionUILabel.setLabel(fontSize: labelFontSizeCaption, initialText: countLabelDescriptionText, screenWidth: screen.width)
-        
         historyDescriptionUILabel.setLabel(fontSize: labelFontSizeCaption, initialText: historyLabelDescriptionText, screenWidth: screen.width)
-        
         countUILabel.setLabel(fontSize: labelFontSizeCountValue, initialText: "\(countValue)", screenWidth: screen.width)
         
         minusUIButton.setRoundButton(backgroundColor: buttonsСhangeBackgroundColor, size: buttonsСhangeSize, borderWidth: buttonsСhangeBorderWidth, color: buttonNonActiveColor, imageSystemName: buttonChangeMinusImageSystemName)
-        
         plusUIButton.setRoundButton(backgroundColor: buttonsСhangeBackgroundColor, size: buttonsСhangeSize, borderWidth: buttonsСhangeBorderWidth, color: buttonChangePlusColor, imageSystemName: buttonChangePlusImageSystemName)
-        
         refreshUIButton.setRoundButton(backgroundColor: buttonsСhangeBackgroundColor, size: buttonsRefreshSize, borderWidth: buttonsRefreshBorderWidth, color: buttonNonActiveColor, imageSystemName: buttonChangeRefreshImageSystemName)
         
         refreshUIButton.frame.origin.x = screen.width / 2 - buttonsRefreshSize / 2
-        
         minusUIButton.frame.origin.x = screen.width / 2 - buttonsСhangeSize * 2
-        
         plusUIButton.frame.origin.x = screen.width / 2 + buttonsСhangeSize
         
     }
     
     private func addHistory(value: Int) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "d MMMM hh:mm:ss"
-        dateFormatter.locale = Locale(identifier: "ru_RU")
-        let date = dateFormatter.string(from: Date())
-        
+        let date: String = DateFormatter().getCurrentDate()
         if value == 0 {
             historyTextUITextView.text = "[\(date)]: значение сброшено\n" + historyTextUITextView.text
         } else if value > 0 {
