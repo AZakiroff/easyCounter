@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C0DD93072A744AB2006096FC /* DateFormatter+getCurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD93062A744AB2006096FC /* DateFormatter+getCurrentDate.swift */; };
+		C0DD93092A74E4A8006096FC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD93082A74E4A8006096FC /* Settings.swift */; };
 		C0EF67B42A703C9E002529AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF67B32A703C9E002529AB /* AppDelegate.swift */; };
 		C0EF67B62A703C9E002529AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF67B52A703C9E002529AB /* SceneDelegate.swift */; };
 		C0EF67B82A703C9E002529AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF67B72A703C9E002529AB /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		C0DD93062A744AB2006096FC /* DateFormatter+getCurrentDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+getCurrentDate.swift"; sourceTree = "<group>"; };
+		C0DD93082A74E4A8006096FC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C0EF67B02A703C9E002529AB /* easyCounter.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easyCounter.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0EF67B32A703C9E002529AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0EF67B52A703C9E002529AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				C0EF67C92A72CBFA002529AB /* UILabel+setLabel.swift */,
 				C0EF67C72A72CBBC002529AB /* UIButton+setRoundButton.swift */,
 				C0DD93062A744AB2006096FC /* DateFormatter+getCurrentDate.swift */,
+				C0DD93082A74E4A8006096FC /* Settings.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				C0EF67C82A72CBBC002529AB /* UIButton+setRoundButton.swift in Sources */,
 				C0EF67B42A703C9E002529AB /* AppDelegate.swift in Sources */,
 				C0EF67B62A703C9E002529AB /* SceneDelegate.swift in Sources */,
+				C0DD93092A74E4A8006096FC /* Settings.swift in Sources */,
 				C0EF67CA2A72CBFA002529AB /* UILabel+setLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

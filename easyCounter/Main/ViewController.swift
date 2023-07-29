@@ -9,23 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private let buttonsСhangeBackgroundColor: UIColor = .white
-    private let buttonsСhangeSize: CGFloat = 80
-    private let buttonsRefreshSize: CGFloat = 40
-    private let buttonsСhangeBorderWidth: Double = 5.0
-    private let buttonsRefreshBorderWidth: Double = 3.0
-    private let buttonChangeMinusColor: UIColor = .red
-    private let buttonChangePlusColor: UIColor = .blue
-    private let buttonChangeRefreshColor: UIColor = .orange
-    private let buttonNonActiveColor: UIColor = .gray
-    private let buttonChangeMinusImageSystemName: String = "minus"
-    private let buttonChangePlusImageSystemName: String = "plus"
-    private let buttonChangeRefreshImageSystemName: String = "arrow.clockwise"
-    private let labelFontSizeCaption: CGFloat = 16
-    private let labelFontSizeCountValue: CGFloat = 52
-    private let countLabelDescriptionText: String = "Значение счётчика"
-    private let historyLabelDescriptionText: String = "История изменений"
-    
     private let screen = UIScreen.main.bounds
     
     @IBOutlet weak private var minusUIButton: UIButton!
@@ -40,11 +23,11 @@ class ViewController: UIViewController {
         didSet{
             countUILabel.text = "\(countValue)"
             if countValue == 0 {
-                minusUIButton.setRoundButton(color: buttonNonActiveColor)
-                refreshUIButton.setRoundButton(color: buttonNonActiveColor)
+                minusUIButton.setRoundButton(color: Settings.buttonNonActiveColor)
+                refreshUIButton.setRoundButton(color: Settings.buttonNonActiveColor)
             } else {
-                minusUIButton.setRoundButton(color: buttonChangeMinusColor)
-                refreshUIButton.setRoundButton(color: buttonChangeRefreshColor)
+                minusUIButton.setRoundButton(color: Settings.buttonChangeMinusColor)
+                refreshUIButton.setRoundButton(color: Settings.buttonChangeRefreshColor)
             }
         }
     }
@@ -54,17 +37,17 @@ class ViewController: UIViewController {
         
         historyTextUITextView.isEditable = false
         
-        countDescriptionUILabel.setLabel(fontSize: labelFontSizeCaption, initialText: countLabelDescriptionText, screenWidth: screen.width)
-        historyDescriptionUILabel.setLabel(fontSize: labelFontSizeCaption, initialText: historyLabelDescriptionText, screenWidth: screen.width)
-        countUILabel.setLabel(fontSize: labelFontSizeCountValue, initialText: "\(countValue)", screenWidth: screen.width)
+        countDescriptionUILabel.setLabel(fontSize: Settings.labelFontSizeCaption, initialText: Settings.countLabelDescriptionText, screenWidth: screen.width)
+        historyDescriptionUILabel.setLabel(fontSize: Settings.labelFontSizeCaption, initialText: Settings.historyLabelDescriptionText, screenWidth: screen.width)
+        countUILabel.setLabel(fontSize: Settings.labelFontSizeCountValue, initialText: "\(countValue)", screenWidth: screen.width)
         
-        minusUIButton.setRoundButton(backgroundColor: buttonsСhangeBackgroundColor, size: buttonsСhangeSize, borderWidth: buttonsСhangeBorderWidth, color: buttonNonActiveColor, imageSystemName: buttonChangeMinusImageSystemName)
-        plusUIButton.setRoundButton(backgroundColor: buttonsСhangeBackgroundColor, size: buttonsСhangeSize, borderWidth: buttonsСhangeBorderWidth, color: buttonChangePlusColor, imageSystemName: buttonChangePlusImageSystemName)
-        refreshUIButton.setRoundButton(backgroundColor: buttonsСhangeBackgroundColor, size: buttonsRefreshSize, borderWidth: buttonsRefreshBorderWidth, color: buttonNonActiveColor, imageSystemName: buttonChangeRefreshImageSystemName)
+        minusUIButton.setRoundButton(backgroundColor: Settings.buttonsСhangeBackgroundColor, size: Settings.buttonsСhangeSize, borderWidth: Settings.buttonsСhangeBorderWidth, color: Settings.buttonNonActiveColor, imageSystemName: Settings.buttonChangeMinusImageSystemName)
+        plusUIButton.setRoundButton(backgroundColor: Settings.buttonsСhangeBackgroundColor, size: Settings.buttonsСhangeSize, borderWidth: Settings.buttonsСhangeBorderWidth, color: Settings.buttonChangePlusColor, imageSystemName: Settings.buttonChangePlusImageSystemName)
+        refreshUIButton.setRoundButton(backgroundColor: Settings.buttonsСhangeBackgroundColor, size: Settings.buttonsRefreshSize, borderWidth: Settings.buttonsRefreshBorderWidth, color: Settings.buttonNonActiveColor, imageSystemName: Settings.buttonChangeRefreshImageSystemName)
         
-        refreshUIButton.frame.origin.x = screen.width / 2 - buttonsRefreshSize / 2
-        minusUIButton.frame.origin.x = screen.width / 2 - buttonsСhangeSize * 2
-        plusUIButton.frame.origin.x = screen.width / 2 + buttonsСhangeSize
+        refreshUIButton.frame.origin.x = screen.width / 2 - Settings.buttonsRefreshSize / 2
+        minusUIButton.frame.origin.x = screen.width / 2 - Settings.buttonsСhangeSize * 2
+        plusUIButton.frame.origin.x = screen.width / 2 + Settings.buttonsСhangeSize
         
     }
     
