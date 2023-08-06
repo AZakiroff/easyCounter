@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3883D998-28FE-470F-B324-9C8AE155A3B0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FABE4FB-358E-43E2-8F3E-26A7D62EC12C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "easyCounter/Controllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "8FABE4FB-358E-43E2-8F3E-26A7D62EC12C - bea728fc01621052"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "easyCounter_ios.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; easyCounter_ios.ViewController"
+                  moduleName = "easyCounter.ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonzakirov/Projects/easyCounter/easyCounter/Controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "8FABE4FB-358E-43E2-8F3E-26A7D62EC12C - 23b0224ae53649f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "easyCounter_ios.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; easyCounter_ios.ViewController"
+                  moduleName = "easyCounter.ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonzakirov/Projects/easyCounter/easyCounter/Controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "8FABE4FB-358E-43E2-8F3E-26A7D62EC12C - b696fa80a933711b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "easyCounter_ios.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;easyCounter_ios.ViewController&gt;"
+                  moduleName = "easyCounter.ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonzakirov/Projects/easyCounter/easyCounter/Controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "8FABE4FB-358E-43E2-8F3E-26A7D62EC12C - d87b5840898aade8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "easyCounter_ios.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;easyCounter_ios.ViewController&gt;"
+                  moduleName = "easyCounter.ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonzakirov/Projects/easyCounter/easyCounter/Controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "8FABE4FB-358E-43E2-8F3E-26A7D62EC12C - 61dc86f6ea079522"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "easyCounter_ios.ViewController.__deallocating_deinit"
+                  moduleName = "easyCounter.ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonzakirov/Projects/easyCounter/easyCounter/Controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
